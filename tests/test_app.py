@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+ROOT_DIR = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT_DIR))
+
 from app import (
     duplicate_tax_calculation_one,
     duplicate_tax_calculation_two,
